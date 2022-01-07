@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MODAL PRACTICE</title>
+	<link rel="stylesheet" type="text/css" href="css/home.css">
+	<link rel="stylesheet" type="text/css" href="css/shop.css">
+	<link rel="stylesheet" type="text/css" href="css/about.css">
+	<link rel="stylesheet" type="text/css" href="css/cart.css">
+	<link rel="stylesheet" type="text/css" href="css/buttons-elements.css">
+	<link rel="stylesheet" type="text/css" href="css/media-screen.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+	<div class="product-box">
+		<img class="product-image" src="img/categories/bumpers/honda-civic-2017.png">
+		<div class="product-info"><h5>HONDA Civic 2017 Bumper</h5></div>
+		<div class="product-price">P 5000</div>
+		<button class="btn-addtocart" type="button">Add to cart</button>
+		<button class="btn-quickview" type="button">Quick view</button>
+	</div>
+
+			
+
+	<div  class="product-modal">
+
+        <div class="product-modal-content product-modal-content-flex">
+
+            	<img class="product-image product-image-flex flex-box1" src="img/categories/bumpers/honda-civic-2017.png">
+
+	            <div class="product-info product-title-flex flex-box2"><h5>Front Bumper for HONDA Civic 2017</h5></div>
+				<div class="product-info-flex flex-box2">
+					<p>Front Bumper suitable for HONDA Civic Model from Year 2017</p>
+					<p>Auto Parts Surplus by BNL Auto Parts Traiding</p>
+					<br>
+					<p>&nbsp;&nbsp;&#9679;&nbsp;Installs the same as factory unit</p>
+					<p>&nbsp;&nbsp;&#9679;&nbsp;Ensuring the best quality for less money</p>
+					<p>&nbsp;&nbsp;&#9679;&nbsp;Compatibility: Honda Civic 2017</p>
+				</div>
+				<div class="product-price product-price-flex flex-box2"><p>₱ 5,000</p></div>
+				<button class="btn-addtocart btn-addtocart-flex flex-box2" type="button">Add to cart</button>
+
+			<span class="product-close">&times;</span>
+
+        </div>
+
+    </div>
+
+		<div class="product-box">
+			<img class="product-image" src="img/categories/bumpers/outlander-sport-bump.png">
+			<div class="product-info"><h5>OUTLANDER Sport Bumper</h5></div>
+			<div class="product-price">P 7000</div>
+			<button class="btn-addtocart" type="button">Add to cart</button>
+		   	<button class="btn-quickview" type="button">Quick view</button>
+		</div>
+
+		<div  class="product-modal">
+
+        <div class="product-modal-content product-modal-content-flex">
+            <span class="product-close">&times;</span>
+            <img class="product-image-flex" src="img/categories/bumpers/outlander-sport-bump.png">
+			<div class="product-title-flex"><h5>OUTLANDER Sport Bumper</h5></div>
+			<div class="product-info-flex"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto libero odit, accusamus delectus, impedit laborum consectetur atque maiores est eveniet vitae deleniti. Perspiciatis ab officiis fugiat dicta non hic placeat?</span></div>
+			<div class="product-price-flex">P 5000</div>
+			<button class="btn-addtocart btn-addtocart-flex" type="button">Add to cart</button>
+        </div>
+
+    	</div>
+
+
+		<style>
+			body {
+				text-align: center;
+			}
+		</style>
+
+
+
+        <script>
+        // Get the modal
+
+        var modalparent = document.getElementsByClassName("product-modal");
+
+        // Get the button that opens the modal
+
+        var modal_btn_multi = document.getElementsByClassName("btn-quickview");
+
+        // Get the <span> element that closes the modal
+        var span_close_multi = document.getElementsByClassName("product-close");
+
+        // When the user clicks the button, open the modal
+        function setDataIndex() {
+
+            for (i = 0; i < modal_btn_multi.length; i++)
+            {
+                modal_btn_multi[i].setAttribute('data-index', i);
+                modalparent[i].setAttribute('data-index', i);
+                span_close_multi[i].setAttribute('data-index', i);
+            }
+        }
+
+
+
+        for (i = 0; i < modal_btn_multi.length; i++)
+        {
+            modal_btn_multi[i].onclick = function() {
+                var ElementIndex = this.getAttribute('data-index');
+                modalparent[ElementIndex].style.display = "block";
+            };
+
+            // When the user clicks on <span> (x), close the modal
+            span_close_multi[i].onclick = function() {
+                var ElementIndex = this.getAttribute('data-index');
+                modalparent[ElementIndex].style.display = "none";
+            };
+
+        }
+
+        window.onload = function() {
+
+            setDataIndex();
+        };
+
+        window.onclick = function(event) {
+            if (event.target === modalparent[event.target.getAttribute('data-index')]) {
+                modalparent[event.target.getAttribute('data-index')].style.display = "none";
+            }
+
+            // OLD CODE
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        };
+
+    </script>
+
+</body>
+</html>

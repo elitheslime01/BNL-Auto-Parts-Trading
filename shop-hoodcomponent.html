@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Hood & Component - BNL</title>
+	<script type="script.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/home.css">
+	<link rel="stylesheet" type="text/css" href="css/shop.css">
+	<link rel="stylesheet" type="text/css" href="css/about.css">
+	<link rel="stylesheet" type="text/css" href="css/cart.css">
+	<link rel="stylesheet" type="text/css" href="css/buttons-elements.css">
+	<link rel="stylesheet" type="text/css" href="css/media-screen.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="icon" type="image/png" href="img/Tag.png">
+</head>
+<body>
+<body>
+	<header>
+		<div class="topheader">
+			<a href="index.html"><img class="logo" src="img/logo.png"></a>
+		</div>
+
+		<nav>
+			<div id="topnavigation">
+				<a href="index.html">HOME</a>
+				<a class="active" href="shop-main.html">SHOP</a>
+				<a href="contact.html">CONTACT US</a>
+				<a href="about.html">ABOUT US</a>
+				<a class="fa fa-shopping-cart" id="myBtnCart" style="float: right;padding: 5px 15px;font-size: 36px;"></a>
+			</div>
+		</nav>
+	</header>
+
+	<div class="content-container2">
+		
+		<!----------------- CODE UNDER HERE ----------------------->
+
+		<div class="shop-header-container">
+			<span class="shop-header-sidebar-nav" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+			<h1 class="shop-header-title">HOODS & COMPONENTS</h1>
+			<a class="shop-header-help fa fa-question-circle" id="myBtnHelp" style="font-size:36px;cursor:pointer;"></a>	
+		</div>
+
+		<div id="mySidenav" class="sidenav">
+		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		  <a href="shop-main.html">All&nbsp;Auto&nbsp;Parts</a>
+		  <a href="shop-bumper.html">Bumpers</a>
+		  <a href="shop-headlight.html">Headlights</a>
+		  <a href="shop-rim.html">Rims</a>
+		  <a href="shop-seatcover.html">Seat&nbsp;Covers</a>
+		  <a href="shop-hoodcomponent.html">Hood&nbsp;and&nbsp;Component</a>
+		  <a href="shop-brake-etc.html">Brakes,&nbsp;Suspension&nbsp;</br>and&nbsp;Steering&nbsp;Wheel</a>
+		</div>
+
+		<div class="products-container">
+
+		<!------------------------- HELP MODAL ------------------------>
+
+		<div class="help-modal" id="myModalHelp">
+
+			<section class="help-modal-content">
+
+				<span class="help-close">&times;</span>
+				<div class="help-container">
+				<div class="help-header"><h1>Can't find the right part?</h1></div>
+				<div id="element"></div>
+				<div id="button-2"><a href="https://www.messenger.com/t/100814011771955" target="_blank">HELP ME FIND MY PARTS!</a></div>
+			</div>
+			</section>	
+
+		</div>
+
+		<div class="products-container">
+		
+			<div class="product-box">
+				<img class="product-image" src="img/categories/hoods/HYUNDAI_HOODS_2-removebg-preview.png" style="width: 50%">
+				<div class="product-info"><h5>HYUNDAI COUPE 2007-2008 Hood</h5></div>
+			    <div class="product-price">P 1300</div>
+		    	<button class="btn-addtocart" type="button">Add to cart</button>
+		   	 	<button class="btn-quickview" type="button">Quick view</button>
+			</div>
+
+			<div  class="product-modal">
+
+		        <div class="product-modal-content product-modal-content-flex">
+
+		            	<img class="product-image product-image-flex flex-box1" src="img/categories/hoods/HYUNDAI_HOODS_2-removebg-preview.png" style="margin-top: 15vh;width: 30vw;">
+
+			        <div class="flex-box2">
+			            <div class="product-info product-title-flex"><h5>HYUNDAI COUPE 2007-2008 Hood</h5></div>
+						<div class="product-info-flex">
+							<p>Hood suitable for HYUNDAI COUPE 2007-2008</p>
+							<p>Auto Parts Surplus by BNL Auto Parts Traiding</p>
+							<br>
+							<p>&nbsp;&nbsp;&#9679;&nbsp;Installs the same as factory unit</p>
+							<p>&nbsp;&nbsp;&#9679;&nbsp;Ensuring the best quality for less money</p>
+							<p>&nbsp;&nbsp;&#9679;&nbsp;Compatibility: HYUNDAI COUPE 2007-2008</p>
+						</div>
+						<div class="product-price-flex"><p>₱ 1,300</p></div>
+						<button class="btn-addtocart btn-addtocart-flex" type="button">Add to cart</button>
+						<button class = "btn-help-flex" target="_blank"><a href="https://www.messenger.com/t/100814011771955">Have a question? Ask a Specialist?</a></button>
+					</div>
+					<span class="product-close">&times;</span>
+
+		        </div>
+
+		    </div>
+
+			<div class="product-box">
+				<img class="product-image" src="img/categories/hoods/TOYOTA_COROLLA_HOODS-removebg-preview.png" style="width: 50%">
+				<div class="product-info"><h5>TOYOTA COROLLA Hood</h5></div>
+			    <div class="product-price">P 1600</div>
+		    	<button class="btn-addtocart" type="button">Add to cart</button>
+		   	 	<button class="btn-quickview" type="button">Quick view</button>
+			</div>
+
+			<div  class="product-modal">
+
+		        <div class="product-modal-content product-modal-content-flex">
+
+		            	<img class="product-image product-image-flex flex-box1" src="img/categories/hoods/TOYOTA_COROLLA_HOODS-removebg-preview.png" style="margin-top: 15vh;width: 30vw;">
+
+			        <div class="flex-box2">
+			            <div class="product-info product-title-flex"><h5>TOYOTA COROLLA Hood</h5></div>
+						<div class="product-info-flex">
+							<p>Hood suitable for TOYOTA COROLLA</p>
+							<p>Auto Parts Surplus by BNL Auto Parts Traiding</p>
+							<br>
+							<p>&nbsp;&nbsp;&#9679;&nbsp;Installs the same as factory unit</p>
+							<p>&nbsp;&nbsp;&#9679;&nbsp;Ensuring the best quality for less money</p>
+							<p>&nbsp;&nbsp;&#9679;&nbsp;Compatibility: TOYOTA COROLLA</p>
+						</div>
+						<div class="product-price-flex"><p>₱ 1,600</p></div>
+						<button class="btn-addtocart btn-addtocart-flex" type="button">Add to cart</button>
+						<button class = "btn-help-flex" target="_blank"><a href="https://www.messenger.com/t/100814011771955">Have a question? Ask a Specialist?</a></button>
+					</div>
+					<span class="product-close">&times;</span>
+
+		        </div>
+
+		    </div>
+			
+			<div class="product-box">
+				<img class="product-image" src="img/categories/hoods/TOYOTA_HOODS_1-removebg-preview.png" style="width: 50%">
+				<div class="product-info"><h5>HYUNDAI VELOSTER 2019-2020 Hood</h5></div>
+			    <div class="product-price">P 3000</div>
+		    	<button class="btn-addtocart" type="button">Add to cart</button>
+		   	 	<button class="btn-quickview" type="button">Quick view</button>
+			</div>
+
+			<div  class="product-modal">
+
+		        <div class="product-modal-content product-modal-content-flex">
+
+		            	<img class="product-image product-image-flex flex-box1" src="img/categories/hoods/TOYOTA_HOODS_1-removebg-preview.png" style="margin-top: 15vh;width: 30vw;">
+
+			        <div class="flex-box2">
+			            <div class="product-info product-title-flex"><h5>HYUNDAI VELOSTER 2019-2020 Hood</h5></div>
+						<div class="product-info-flex">
+							<p>Hood suitable for HYUNDAI VELOSTER 2019-2020</p>
+							<p>Auto Parts Surplus by BNL Auto Parts Traiding</p>
+							<br>
+							<p>&nbsp;&nbsp;&#9679;&nbsp;Installs the same as factory unit</p>
+							<p>&nbsp;&nbsp;&#9679;&nbsp;Ensuring the best quality for less money</p>
+							<p>&nbsp;&nbsp;&#9679;&nbsp;Compatibility: HYUNDAI VELOSTER 2019-2020</p>
+						</div>
+						<div class="product-price-flex"><p>₱ 3,000</p></div>
+						<button class="btn-addtocart btn-addtocart-flex" type="button">Add to cart</button>
+						<button class = "btn-help-flex" target="_blank"><a href="https://www.messenger.com/t/100814011771955">Have a question? Ask a Specialist?</a></button>
+					</div>
+					<span class="product-close">&times;</span>
+
+		        </div>
+
+		    </div>
+
+			<div class="product-box">
+				<img class="product-image" src="img/categories/hoods/toyota-hood.png" style="width: 50%">
+				<div class="product-info"><h5>TOYOTA PRIUS C hood</h5></div>
+			    <div class="product-price">P 2000</div>
+		    	<button class="btn-addtocart" type="button">Add to cart</button>
+		   	 	<button class="btn-quickview" type="button">Quick view</button>
+			</div>
+
+			<div  class="product-modal">
+
+		        <div class="product-modal-content product-modal-content-flex">
+
+		            	<img class="product-image product-image-flex flex-box1" src="img/categories/hoods/toyota-hood.png" style="height: 30vh;margin-top: 15vh;"> 
+
+			        <div class="flex-box2">
+			            <div class="product-info product-title-flex"><h5>TOYOTA PRIUS C Hood</h5></div>
+						<div class="product-info-flex">
+							<p>Hood suitable for TOYOTA PRIUS C</p>
+							<p>Auto Parts Surplus by BNL Auto Parts Traiding</p>
+							<br>
+							<p>&nbsp;&nbsp;&#9679;&nbsp;Installs the same as factory unit</p>
+							<p>&nbsp;&nbsp;&#9679;&nbsp;Ensuring the best quality for less money</p>
+							<p>&nbsp;&nbsp;&#9679;&nbsp;Compatibility: TOYOTA PRIUS C</p>
+
+						</div>
+						<div class="product-price-flex"><p>₱ 2,300</p></div>
+						<button class="btn-addtocart btn-addtocart-flex" type="button">Add to cart</button>
+						<button class = "btn-help-flex" target="_blank"><a href="https://www.messenger.com/t/100814011771955">Have a question? Ask a Specialist?</a></button>
+					</div>
+					<span class="product-close">&times;</span>
+
+		        </div>
+
+		       </div>
+
+			<div class="product-box">
+				<img class="product-image" src="img/categories/hoods/hood_hinge-removebg-preview.png" style="width: 50%">
+				<div class="product-info"><h5>HOOD HINGE </h5></div>
+			    <div class="product-price">P 700</div>
+		    	<button class="btn-addtocart" type="button">Add to cart</button>
+		   	 	<button class="btn-quickview" type="button">Quick view</button>
+			</div>
+
+			<div  class="product-modal">
+
+			<div class="product-modal-content product-modal-content-flex">
+
+		            	<img class="product-image product-image-flex flex-box1" src="img/categories/hoods/hood_hinge-removebg-preview.png" style="height: 40vh;margin-top: 15vh;"> 
+
+			        <div class="flex-box2">
+			            <div class="product-info product-title-flex"><h5>HOOD HINGE </h5></div>
+						<div class="product-info-flex">
+							<p>HOOD HINGE suitable for Most US and Japanese Car Vehicle Automobile</p>
+							<p>Auto Parts Surplus by BNL Auto Parts Traiding</p>
+							<br>
+							<p>&nbsp;&nbsp;&#9679;&nbsp;Installs the same as factory unit</p>
+							<p>&nbsp;&nbsp;&#9679;&nbsp;Ensuring the best quality for less money</p>
+							<p>&nbsp;&nbsp;&#9679;&nbsp;Compatibility: Most US and Japanese Car Vehicle Automobile</p>
+
+						</div>
+						<div class="product-price-flex"><p>₱ 700</p></div>
+						<button class="btn-addtocart btn-addtocart-flex" type="button">Add to cart</button>
+						<button class = "btn-help-flex" target="_blank"><a href="https://www.messenger.com/t/100814011771955">Have a question? Ask a Specialist?</a></button>
+					</div>
+					<span class="product-close">&times;</span>
+
+		        </div>
+
+		       </div>
+
+		</div>
+
+		<!------------------------- SHOP CART MODAL ------------------------>
+
+		<div class="shop-cart-modal" id="myModalCart">
+
+			<section class="shop-cart-modal-content">
+
+				<span class="shop-cart-close">&times;</span>
+				<span class="cart-header-title"><h1>SHOPPING CART</h1></span>
+
+				<div class="cart-row">
+					<span class="cart-item cart-header cart-column">ITEMS</span>
+					<span class="cart-price cart-header cart-column">PRICE</span>
+					<span class="cart-quantity cart-header cart-column">QUANTITY</span>
+				</div>
+			
+				<div class="cart-items">
+
+				</div>
+
+				<div class="cart-total">
+					<strong class="cart-total-title">Total</strong>
+					<span class="cart-total-price">P0</span>
+	            </div>
+
+	            <button class="btn-purchase" type="button">PURCHASE</button>
+
+			</section>	
+
+		</div>
+
+		<!------------------------- FOOTER ------------------------>
+
+		<div class="footer-container">
+			<footer class="topfooter">
+				<i class="fa fa-envelope"><span>info:@bnlautoparts.com</span></i>
+				<i class="fa fa-map-marker"><span>4&5 Santos st. Brgy. Damayan SFDM Quezon City</span></i>
+				<i class="fa fa-phone"><span>0956 150 8155</span></i>
+				<i class="fa fa-facebook"><span>facebook.com/bnlautoparts</span></i>
+			</footer>
+			<footer class="botfooter">© 2023 by BNL Auto Parts Trading. Proudly created by INTCOMP: Group 5</footer>
+		</div>
+
+	</div>
+
+<!------------------------- SCRIPTS ------------------------>
+
+	<script src="js/stickynav.js" async></script>
+
+	<script src="js/shop.js" async></script>
+
+</body>
+</html>

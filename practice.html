@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>PRACTICE</title>
+	<link rel="stylesheet" type="text/css" href="css/home.css">
+	<link rel="stylesheet" type="text/css" href="css/shop.css">
+	<link rel="stylesheet" type="text/css" href="css/about.css">
+	<link rel="stylesheet" type="text/css" href="css/cart.css">
+	<link rel="stylesheet" type="text/css" href="css/buttons-elements.css">
+	<link rel="stylesheet" type="text/css" href="css/media-screen.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    
+    <style type="text/css">
+    	body {
+    		text-align: center;
+    	}
+    </style>
+
+
+
+
+    <div class="product-box">
+			<img class="product-image" src="img/categories/bumpers/honda-civic-2017.png">
+			<div class="product-info"><h5>HONDA Civic 2017 Bumper</h5></div>
+			<div class="product-price">P 5000</div>
+			<button class="btn-addtocart" type="button">Add to cart</button>
+			<button class="btn-quickview" type="button">Quick view</button>
+		</div>
+
+			<div  class="modal modal_multi">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close close_multi">&times;</span>
+            <img class="product-image" src="img/categories/bumpers/honda-civic-2017.png">
+            <div class="product-info"><h5>HONDA Civic 2017 Bumper</h5></div>
+						<div class="priduct-title"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto libero odit, accusamus delectus, impedit laborum consectetur atque maiores est eveniet vitae deleniti. Perspiciatis ab officiis fugiat dicta non hic placeat?</span></div>
+						<div class="product-price">P 5000</div>
+				    <button class="btn-addtocart" type="button">Add to cart</button>
+				</section>
+        </div>
+
+    </div>
+
+			<div class="product-box">
+				<img class="product-image" src="img/categories/bumpers/outlander-sport-bump.png">
+				<div class="product-info"><h5>OUTLANDER Sport Bumper</h5></div>
+				<div class="product-price">₱ 7000</div>
+				<button class="btn-addtocart" type="button">Add to cart</button>
+		   	 	<button class="btn-quickview" type="button">Quick view</button>
+			</div>
+
+        <script>
+        // Get the modal
+
+        var modalparent = document.getElementsByClassName("modal_multi");
+
+        // Get the button that opens the modal
+
+        var modal_btn_multi = document.getElementsByClassName("myBtn_multi");
+
+        // Get the <span> element that closes the modal
+        var span_close_multi = document.getElementsByClassName("close_multi");
+
+        // When the user clicks the button, open the modal
+        function setDataIndex() {
+
+            for (i = 0; i < modal_btn_multi.length; i++)
+            {
+                modal_btn_multi[i].setAttribute('data-index', i);
+                modalparent[i].setAttribute('data-index', i);
+                span_close_multi[i].setAttribute('data-index', i);
+            }
+        }
+
+
+
+        for (i = 0; i < modal_btn_multi.length; i++)
+        {
+            modal_btn_multi[i].onclick = function() {
+                var ElementIndex = this.getAttribute('data-index');
+                modalparent[ElementIndex].style.display = "block";
+            };
+
+            // When the user clicks on <span> (x), close the modal
+            span_close_multi[i].onclick = function() {
+                var ElementIndex = this.getAttribute('data-index');
+                modalparent[ElementIndex].style.display = "none";
+            };
+
+        }
+
+        window.onload = function() {
+
+            setDataIndex();
+        };
+
+        window.onclick = function(event) {
+            if (event.target === modalparent[event.target.getAttribute('data-index')]) {
+                modalparent[event.target.getAttribute('data-index')].style.display = "none";
+            }
+
+            // OLD CODE
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        };
+
+    </script>
+
+    <script src="js/shop.js" async></script>
+
+</body>
+</html>

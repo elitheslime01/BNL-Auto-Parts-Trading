@@ -1,0 +1,373 @@
+
+
+/*-----------------FOR SHOP ONLY------------------*/
+
+.content-container2 {
+  padding: 0px;
+  margin: 0;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: white;
+  z-index: 1;
+  text-align: center;
+}
+
+/*----------------- Shop Header -----------------*/
+
+.shop-header-container {
+  display: flex;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  color: #2F2E2E;
+}
+
+.shop-header-sidebar-nav {
+  flex: 1;
+  padding-top: 20px;
+}
+
+.shop-header-title {
+  flex: 5;
+  padding-top: 25px;
+  margin: 0;
+}
+
+.shop-header-help {
+  flex: 1;
+  padding-top: 20px;
+}
+
+/*----------------- Sidenav -----------------*/
+
+.sidenav {
+  height: 190%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #f9cf3d;
+  overflow-x: hidden;
+  transition: 0.5s;
+  text-align: left;
+  padding-top: 20vh;
+  opacity: 90%;
+}
+
+.sidenav a {
+  padding: 10px 8px 10px 64px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: lighter;
+  letter-spacing: -0.05em;
+  color: #2F2E2E;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: relative;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  padding-top: 0;
+  text-align: right;
+}
+
+
+/*@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}*/
+
+/*----------------- Product Boxes -----------------*/
+
+.product-container {
+}
+
+.product-box {
+  margin: 3%;
+  width: 25vw;
+  min-height
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  box-sizing: border-box;
+  border-radius: 3px;
+  border: 2px solid;
+  border-color: #A0A09F;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+/*----------------- Product Images -----------------*/
+.product-image {
+  margin-top: 5%;
+  padding: 0;
+  width: 90%;
+  height: 24vh;
+}
+
+/*----------------- Product Info -----------------*/
+.product-info {
+  padding-top: 5%;
+}
+
+.product-price {
+  margin: 5%;
+}
+
+/*----------------- Shopping Cart Modal Box -----------------*/
+
+.shop-cart-modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 20vh;
+  padding-bottom: 20vh;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.shop-cart-modal-content {
+  position: relative;
+  max-width: 1000vw;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0 1.5em;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+.shop-cart-close {
+  color: black;
+  float: right;
+  font-size: 39px;
+  font-weight: bold;
+}
+
+.shop-cart-close:hover,
+.shop-cart-close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*----------------- Help Modal Box -----------------*/
+
+.help-modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 20vh;
+  padding-bottom: 20vh;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.help-modal-content {
+  position: relative;
+  max-width: 1000vw;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0 1.5em;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+.help-close {
+  color: black;
+  float: right;
+  font-size: 39px;
+  font-weight: bold;
+}
+
+.help-close:hover,
+.help-close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*----------------- Product Modal Box -----------------*/
+
+/* The Modal (background) */
+.product-modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 20vh;
+  padding-bottom: 20vh;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+/* Modal Content */
+.product-modal-content {
+  position: relative;
+  max-width: 1000vw;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0 1.5em;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.product-close {
+  color: black;
+  float: right;
+  font-size: 39px;
+  font-weight: bold;
+}
+
+.product-close:hover,
+.product-close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.product-modal-content-flex {
+  display: flex;
+}
+
+.product-image-flex {
+  height: 30vh;
+  width: 100%;
+  margin: 35px 0 0 0;
+}
+
+.product-title-flex h5 {
+  text-align: left;
+  font-size: 5vh;
+  font-weight: bold;
+  color: #2F2E2E;
+  letter-spacing: -0.05em;
+  margin: 28px 0 0 0;
+  padding: 0 0 13px 28px;
+}
+
+.product-info-flex p{
+  text-align: left;
+  font-size: 1.4vw;
+  color: #2F2E2E;
+  margin: 0 0 5px 0;
+  padding: 0 0 0 28px;
+}
+
+.product-price-flex p {
+  text-align: left;
+  font-size: 2vw;
+  font-weight: bold;
+  color: #2F2E2E;
+  letter-spacing: -0.05em;
+  margin: 28px 0 5px 0;
+  padding: 0 0 0 28px;
+}
+
+.btn-addtocart-flex {
+  margin: 28px 0 0 0;
+  width: 92%;
+}
+
+.btn-help-flex {
+  width: 92%;
+  background-color: white;
+  border: 3px solid;
+  border-color: #f9cf3d;
+  padding: 1.7vh 6.8vw;
+  cursor: pointer;
+  margin-bottom: 4.5vh;
+}
+
+.btn-help-flex a {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: bold;
+  color: #f9cf3d;
+  letter-spacing: -0.05em;
+}
+
+.btn-help-flex:hover {
+  background-color: #f9cf3d;
+}
+
+.btn-help-flex a:hover {
+  color: white;
+  transition: 0.40s;
+}
+
+.flex-box1 {
+  flex: 1;
+}
+
+.flex-box2 {
+  flex: 2;
+}

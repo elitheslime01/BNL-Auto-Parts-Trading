@@ -1,0 +1,193 @@
+
+
+
+
+/*------------ELEMENTS AND BUTTONS-------------*/
+
+
+
+.button-container {
+  text-align: center;
+}
+
+.content-container1 .filler {
+  width: 50%;
+  padding: 6%;
+}
+
+/*Styles the view all button*/
+#button-1 {
+  background-color: #f9cf3d;
+  border: none;
+  padding: 15px 32px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: -0.05em;
+  color: #2F2E2E;
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+
+/*Changes the color when hover over*/
+#button-1:hover {
+  background-color: #B39105;
+  color: white;
+  transition: 0.40s;
+}
+
+#button-2 {
+  text-align: center;
+}
+
+#button-2 a{
+  background-color: #f9cf3d;
+  border: none;
+  padding: 15px 32px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: -0.05em;
+  color: #2F2E2E;
+  margin-top: 80px;
+  margin-bottom: 70px;
+  text-decoration: none;
+}
+
+#button-2 a:hover {
+  background-color: #B39105;
+  color: white;
+  transition: 0.40s;
+}
+
+#button-3 {
+  margin: 5%;
+}
+
+#button-3 a{
+  background-color: #f9cf3d;
+  border: none;
+  padding: 15px 32px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: -0.05em;
+  color: #2F2E2E;
+  text-decoration: none;
+}
+
+#button-3 a:hover {
+  background-color: #B39105;
+  color: white;
+  transition: 0.40s;
+}
+
+/*Flat yellow bar design*/
+#element {
+  background-color: #f9cf3d;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  padding-top: 7px;
+  width: 100px;
+}
+
+
+
+/*for the sticky effect of the top navigation bar*/
+/*DO NOT REMOVE OR EDIT!*/
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/*DO NOT REMOVE OR EDIT!*/
+.sticky + .content {
+  padding-right: 60px;
+}
+
+.btn-addtocart {
+  margin-bottom: 4.5vh;
+  padding: 0;
+}
+
+.btn-addtocart {
+  background-color: #f9cf3d;
+  border: none;
+  padding: 2vh 7vw;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: -0.05em;
+  color: #2F2E2E;
+  text-decoration: none;
+}
+
+.btn-addtocart:hover {
+  background-color: #B39105;
+  color: white;
+  transition: 0.40s;
+}
+
+.btn-quickview {
+  margin-bottom: 7%;
+  padding: 0;
+}
+
+.btn-quickview {
+  background-color: white;
+  border: 3px solid;
+  border-color: #f9cf3d;
+  padding: 1.7vh 6.8vw;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: -0.05em;
+  color: #f9cf3d;
+  text-decoration: none;
+}
+
+.btn-quickview:hover {
+  background-color: #f9cf3d;
+  color: white;
+  transition: 0.40s;
+}
+
+.btn-purchase {
+  background-color: #f9cf3d;
+  border: none;
+  padding: 25px 59px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: -0.05em;
+  color: #2F2E2E;
+  margin-bottom: 70px;
+  text-decoration: none;
+  text-align: center;  
+}
+
+.btn-purchase:hover {
+  background-color: #B39105;
+  color: white;
+  transition: 0.40s;
+}
+
+
+.btn-remove {
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    font-weight: bold;
+    padding: 10px 15px;
+}
+
+.btn-remove:hover {
+    background-color: #CC4C4C;
+}

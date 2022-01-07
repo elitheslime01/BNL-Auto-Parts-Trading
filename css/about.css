@@ -1,0 +1,73 @@
+
+
+/*---------------FOR ABOUT PAGE----------------*/
+
+
+.ownerpic {
+  margin: 0;
+  padding: 0;
+  width: 20%;
+  float: left;
+}
+
+.about-container .contenthead {
+  padding-top: 80px;
+  padding-bottom: 20px;
+  margin: 0%;
+  background-color: white;
+}
+
+.about-container .contenthead h1 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: #2F2E2E;
+  letter-spacing: -0.05em;
+}
+
+.about-container .contenthead p {
+  margin-top: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  color: #999999;
+  letter-spacing: -0.05em;
+}
+
+.main-content p{
+	grid-area: left-content;
+	font-size: 20px;
+  font-family: 'Century Gothic', sans serif;
+  color: #23120B;
+  text-align: center;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.about-content {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  background-color: #ddd;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 0.5%;
+  border-radius: 10px;
+}
+
+.vid-container {
+  margin: 0;
+  padding: 2%;
+  width: 100%;
+  height: 300%;
+  text-align: center;
+  background-color: white;
+}
+
+.adver-vid {
+  width: 300%;
+  height: 169%;
+}

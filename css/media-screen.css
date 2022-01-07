@@ -1,0 +1,45 @@
+/*the style of the overall top navigation when the screen is at 600px width*/
+@media screen and (max-width: 780px) {
+
+  /*Style the banner image*/
+  .banner {
+    background-image: url(banner_2A.png);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    width: 300%;
+    height: 500px;
+    margin-top: 80px;
+    z-index: -2;
+
+  }
+
+  /*position of the search bar*/
+  #topnavigation .search-container {
+    float: none;
+  }
+
+  /*Style the search bar and button*/
+  #topnavigation input[type=text] {
+    float: left;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+
+  /*Style the search button*/
+  #topnavigation .search-container button {
+    display: block;
+    padding: 14px;
+    margin: 0;
+    width: 100%;
+  }
+
+  /*border of the search bar*/
+  #topnavigation input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
