@@ -6,7 +6,7 @@ An automotive e-commerce website for selling automotive parts.
 
 ## Warning
 - Not compatible for mobile
-- Layout may not be consistent on differect screen sizes
+- Layout may not be consistent on different screen sizes
 
 ## Screenshots:
 ![image](https://github.com/elitheslime01/BNL-Auto-Parts-Trading/assets/136667164/e7499fb5-781f-4556-b46c-5512acccee29)
