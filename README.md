@@ -1,5 +1,5 @@
 # BNL-Auto-Parts-Trading
-A website project made with HTML, CSS, and JAVASCRIPT for our final term requirement.
+A mock website made with HTML, CSS, and JAVASCRIPT for our final term requirement with permission of the company's owner.
 
 ## Website Description
 An automotive e-commerce website for selling automotive parts.
